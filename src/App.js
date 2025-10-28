@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import QuestionList from "./components/QuestionList";
+import AddQuestionForm from "./components/AddQuestionForm";
 
 function App() {
+  const [refresh, setRefresh] = useState(false);
+
+  const handleAdded = () => setRefresh(!refresh);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    React.createElement("div", { className: "App", style: { padding: "20px" } },
+      React.createElement("h1", null, "DriveTestHub - Ôn thi bằng lái xe"),
+      React.createElement(AddQuestionForm, { onAdded: handleAdded }),
+      React.createElement(QuestionList, { key: refresh })
+    )
   );
 }
 

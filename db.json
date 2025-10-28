@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Khi đèn tín hiệu màu đỏ, người lái xe phải làm gì?",
+      "options": [
+        "Tăng tốc đi qua",
+        "Dừng lại trước vạch",
+        "Bấm còi cảnh báo"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "3",
+      "question": "Biển báo 'Cấm ô tô' có hình dạng gì?",
+      "options": [
+        "Hình tròn viền đỏ",
+        "Hình tam giác viền vàng",
+        "Hình vuông xanh"
+      ],
+      "answer": 0
+    }
+  ]
+}
