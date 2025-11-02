@@ -1,24 +1,121 @@
 {
-  "questions": [
+  "User": [
     {
       "id": "1",
-      "question": "Khi đèn tín hiệu màu đỏ, người lái xe phải làm gì?",
-      "options": [
-        "Tăng tốc đi qua",
-        "Dừng lại trước vạch",
-        "Bấm còi cảnh báo"
-      ],
-      "answer": 1
+      "userName": "admin",
+      "password": "123456",
+      "fullName": "Administrator",
+      "role": 1
+    },
+    {
+      "id": "2",
+      "userName": "student1",
+      "password": "123456",
+      "fullName": "Nguyen Van A",
+      "role": 0
     },
     {
       "id": "3",
-      "question": "Biển báo 'Cấm ô tô' có hình dạng gì?",
-      "options": [
-        "Hình tròn viền đỏ",
-        "Hình tam giác viền vàng",
-        "Hình vuông xanh"
-      ],
-      "answer": 0
+      "userName": "cust1",
+      "password": "123",
+      "fullName": "123",
+      "role": 0
+    },
+    {
+      "id": "4",
+      "userName": "hunter",
+      "password": "123",
+      "confirmPassword": "123",
+      "fullName": "123",
+      "role": 0
+    }
+  ],
+  "Questions": [
+    {
+      "id": "1",
+      "content": "Khi tham gia giao thông, người điều khiển xe phải mang theo giấy tờ gì?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": true,
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "content": "Khi gặp biển báo nguy hiểm, người lái xe cần làm gì?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "userId": 1
+    }
+  ],
+  "Answer": [
+    {
+      "id": "1",
+      "content": "Giấy phép lái xe, đăng ký xe và bảo hiểm trách nhiệm dân sự",
+      "optionLabel": "A",
+      "questionsId": 1
+    },
+    {
+      "id": "2",
+      "content": "CMND, đăng ký xe và giấy phép lái xe",
+      "optionLabel": "B",
+      "questionsId": 1
+    },
+    {
+      "id": "3",
+      "content": "Giấy phép lái xe và giấy chứng nhận kiểm định an toàn kỹ thuật",
+      "optionLabel": "C",
+      "questionsId": 1
+    },
+    {
+      "id": "4",
+      "content": "Giảm tốc độ, quan sát và chuẩn bị xử lý tình huống nguy hiểm có thể xảy ra",
+      "optionLabel": "A",
+      "questionsId": 2
+    },
+    {
+      "id": "5",
+      "content": "Tăng tốc để vượt qua nhanh khu vực nguy hiểm",
+      "optionLabel": "B",
+      "questionsId": 2
+    }
+  ],
+  "Exams": [
+    {
+      "id": "1",
+      "score": 9,
+      "totalQuestion": 10,
+      "correctCount": 9,
+      "takeAt": "08:30:00",
+      "endedAt": "08:45:00",
+      "userId": 2,
+      "passStatus": true
+    },
+    {
+      "id": "2",
+      "score": 7,
+      "totalQuestion": 10,
+      "correctCount": 7,
+      "takeAt": "10:00:00",
+      "endedAt": "10:15:00",
+      "userId": 2,
+      "passStatus": false
+    }
+  ],
+  "ExamDetails": [
+    {
+      "id": "1",
+      "selectedAnswer": "A",
+      "isCorrect": true,
+      "examsId": 1,
+      "questionsId": 1
+    },
+    {
+      "id": "2",
+      "selectedAnswer": "B",
+      "isCorrect": false,
+      "examsId": 2,
+      "questionsId": 1
     }
   ]
 }

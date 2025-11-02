@@ -6,7 +6,6 @@ function QuestionList() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    // gọi API bằng async/await
     const fetchData = async () => {
       try {
         const res = await api.get("/questions");
