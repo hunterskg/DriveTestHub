@@ -37,7 +37,23 @@
       "image": "",
       "correctAnswer": "B",
       "isCritical": true,
-      "userId": 1
+      "answers": [
+        {
+          "id": "1",
+          "content": "Giấy phép lái xe, đăng ký xe và bảo hiểm trách nhiệm dân sự",
+          "optionLabel": "A"
+        },
+        {
+          "id": "2",
+          "content": "CMND, đăng ký xe và giấy phép lái xe",
+          "optionLabel": "B"
+        },
+        {
+          "id": "3",
+          "content": "Giấy phép lái xe và giấy chứng nhận kiểm định an toàn kỹ thuật",
+          "optionLabel": "C"
+        }
+      ]
     },
     {
       "id": "2",
@@ -45,39 +61,18 @@
       "image": "",
       "correctAnswer": "A",
       "isCritical": false,
-      "userId": 1
-    }
-  ],
-  "Answer": [
-    {
-      "id": "1",
-      "content": "Giấy phép lái xe, đăng ký xe và bảo hiểm trách nhiệm dân sự",
-      "optionLabel": "A",
-      "questionsId": 1
-    },
-    {
-      "id": "2",
-      "content": "CMND, đăng ký xe và giấy phép lái xe",
-      "optionLabel": "B",
-      "questionsId": 1
-    },
-    {
-      "id": "3",
-      "content": "Giấy phép lái xe và giấy chứng nhận kiểm định an toàn kỹ thuật",
-      "optionLabel": "C",
-      "questionsId": 1
-    },
-    {
-      "id": "4",
-      "content": "Giảm tốc độ, quan sát và chuẩn bị xử lý tình huống nguy hiểm có thể xảy ra",
-      "optionLabel": "A",
-      "questionsId": 2
-    },
-    {
-      "id": "5",
-      "content": "Tăng tốc để vượt qua nhanh khu vực nguy hiểm",
-      "optionLabel": "B",
-      "questionsId": 2
+      "answers": [
+        {
+          "id": "4",
+          "content": "Giảm tốc độ, quan sát và chuẩn bị xử lý tình huống nguy hiểm có thể xảy ra",
+          "optionLabel": "A"
+        },
+        {
+          "id": "5",
+          "content": "Tăng tốc để vượt qua nhanh khu vực nguy hiểm",
+          "optionLabel": "B"
+        }
+      ]
     }
   ],
   "Exams": [
@@ -100,6 +95,16 @@
       "endedAt": "10:15:00",
       "userId": 2,
       "passStatus": false
+    },
+    {
+      "id": "1762254064642",
+      "score": 0,
+      "totalQuestion": 2,
+      "correctCount": 0,
+      "takeAt": "6:01:04 PM",
+      "endedAt": null,
+      "userId": 1,
+      "passStatus": false
     }
   ],
   "ExamDetails": [
@@ -116,6 +121,20 @@
       "isCorrect": false,
       "examsId": 2,
       "questionsId": 1
+    },
+    {
+      "id": "1762254064642_1",
+      "selectedAnswer": "",
+      "isCorrect": false,
+      "examsId": "1762254064642",
+      "questionsId": "1"
+    },
+    {
+      "id": "1762254064642_2",
+      "selectedAnswer": "",
+      "isCorrect": false,
+      "examsId": "1762254064642",
+      "questionsId": "2"
     }
   ]
 }

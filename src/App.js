@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
-import AdminPage from "./pages/AdminPage";
+import AdminPage from "./pages/Admin/AdminPage";
 import RegisterPage from "./pages/RegisterPage";
+import CreateExamPage from "./pages/Admin/CreateExamPage";
+import UserExamListPage from "./pages/UserExamListPage";
+import UserPage from "./pages/UserPage";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -48,17 +51,11 @@ function AppRoutes({ user, setUser }) {
       />
 
       {/* Trang user */}
-      <Route
-        path="/user"
-        element={
-          user && user.role === 0 ? (
-            <HomePage user={user} onLogout={handleLogout} />
-          ) : (
-            <Navigate to="/" />
-          )
-        }
-      />
+      
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/admin/create-exam" element={<CreateExamPage />} /> 
+      <Route path="/exams" element={<UserExamListPage />} />
+      <Route path="/user" element={<UserPage user={user} onLogout={handleLogout} />} />
     </Routes>
   );
 }
