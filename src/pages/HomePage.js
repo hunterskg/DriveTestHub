@@ -1,6 +1,8 @@
 // src/pages/HomePage.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function HomePage() {
@@ -9,30 +11,7 @@ function HomePage() {
   return (
     <>
       {/* ===== HEADER ===== */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-        <div className="container">
-          <a className="navbar-brand fw-bold fs-4" href="/">
-            🚗 DriveTestHub
-          </a>
-
-          <div className="collapse navbar-collapse justify-content-end">
-            <div className="d-flex align-items-center gap-2">
-              <button
-                className="btn btn-light btn-sm px-3"
-                onClick={() => navigate("/login?role=user")}
-              >
-                👤 User
-              </button>
-              <button
-                className="btn btn-outline-light btn-sm px-3"
-                onClick={() => navigate("/login?role=admin")}
-              >
-                🛠️ Admin
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header user={null} onLogout={() => {}} />
 
       {/* ===== BODY ===== */}
       <div className="container py-5 text-center">
@@ -54,11 +33,7 @@ function HomePage() {
       </div>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-light text-center py-3 border-top mt-5">
-        <p className="mb-1 text-muted">
-          © {new Date().getFullYear()} <strong>DriveTestHub</strong>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -33,108 +33,2680 @@
   "Questions": [
     {
       "id": "1",
-      "content": "Khi tham gia giao thông, người điều khiển xe phải mang theo giấy tờ gì?",
+      "content": "Trong Luật TTATGTĐB, “đường ưu tiên” được quy định như thế nào?",
       "image": "",
-      "correctAnswer": "B",
-      "isCritical": true,
+      "correctAnswer": "C",
+      "isCritical": false,
       "answers": [
         {
-          "id": "1",
-          "content": "Giấy phép lái xe, đăng ký xe và bảo hiểm trách nhiệm dân sự",
+          "id": "1_1",
+          "content": "Đường ưu tiên là đường chỉ dành cho một số loại phương tiện tham gia giao thông, được cắm biển báo hiệu đường ưu tiên.",
           "optionLabel": "A"
         },
         {
-          "id": "2",
-          "content": "CMND, đăng ký xe và giấy phép lái xe",
+          "id": "1_2",
+          "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi giao nhau, có thể được cắm biển báo hiệu đường ưu tiên.",
           "optionLabel": "B"
         },
         {
-          "id": "3",
-          "content": "Giấy phép lái xe và giấy chứng nhận kiểm định an toàn kỹ thuật",
+          "id": "1_3",
+          "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đường bộ đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên.",
           "optionLabel": "C"
         }
       ]
     },
     {
       "id": "2",
-      "content": "Khi gặp biển báo nguy hiểm, người lái xe cần làm gì?",
+      "content": "Trong Luật TTATGTĐB, “làn đường” được quy định như thế nào?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "2_1",
+          "content": "Là phần của đường bộ được sử dụng cho phương tiện giao thông đi lại.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "2_2",
+          "content": "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "2_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": "Trong Luật TTATGTĐB, “người tham gia giao thông đường bộ” gồm những thành phần nào?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "3_1",
+          "content": "Người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "3_2",
+          "content": "Người điều khiển, dẫn dắt vật nuôi trên đường bộ.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "3_3",
+          "content": "Người đi bộ trên đường bộ.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "3_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": "Trong Luật TTATGTĐB, “người lái xe” được quy định như thế nào?",
       "image": "",
       "correctAnswer": "A",
       "isCritical": false,
       "answers": [
         {
-          "id": "4",
-          "content": "Giảm tốc độ, quan sát và chuẩn bị xử lý tình huống nguy hiểm có thể xảy ra",
+          "id": "4_1",
+          "content": "Là người điều khiển xe cơ giới.",
           "optionLabel": "A"
         },
         {
-          "id": "5",
-          "content": "Tăng tốc để vượt qua nhanh khu vực nguy hiểm",
+          "id": "4_2",
+          "content": "Là người điều khiển xe thô sơ.",
           "optionLabel": "B"
+        },
+        {
+          "id": "4_3",
+          "content": "Là người điều khiển xe máy chuyên dùng.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": "Trong Luật TTATGTĐB, “người điều khiển giao thông đường bộ” gồm những thành phần nào?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "5_1",
+          "content": "Người điều khiển phương tiện tham gia giao thông.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "5_2",
+          "content": "Cảnh sát giao thông và người được giao nhiêm vụ hướng dẫn giao thông trên đường bộ.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "content": "Người tham gia giao thông ngoài việc phải chấp hành các quy định về trật tự, an toàn giao thông đường bộ và quy định khác của pháp luật có liên quan, còn có trách nhiệm gì?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "6_1",
+          "content": "Giữ an toàn cho mình.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "6_2",
+          "content": "Giữ an toàn cho người khác.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "6_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "content": "Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật là đúng hay sai?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "7_1",
+          "content": "Sai.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "7_2",
+          "content": "Đúng.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "7_3",
+          "content": "Tùy trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "8_1",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "8_2",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "8_3",
+          "content": "Cấm người điều khiển phương tiện giao thông mà trong máu có nồng độ cồn vượt quá 50 miligam/100 mililít máu hoặc vượt quá 0,25 miligam/1lít khí thở.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong cơ thể có chất ma túy không?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "9_1",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "9_2",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "9_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "content": "Hành vi nào dưới đây bị nghiêm cấm trong Luật TTATGTĐB?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "10_1",
+          "content": "Điều khiển phương tiện tham gia giao thông đường bộ lạng lách, đánh võng, rú ga liên tục.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "10_2",
+          "content": "Đua xe, tổ chức đua xe, xúi giục, giúp sức, cổ vũ đua xe trái phép.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "10_3",
+          "content": "Xúc phạm, đe dọa, cản trở, chống đối hoặc không chấp hành hiệu lệnh, hướng dẫn, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "10_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "content": "Luật TTATGTĐB có nghiêm cấm người lái xe dùng tay cầm và sử dụng điện thoại khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "11_1",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "11_2",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "11_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "content": "Luật TTATGTĐB có nghiêm cấm hành vi giao xe mô tô, xe gắn máy cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ không?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "12_1",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "12_2",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "12_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "content": "Luật TTATGTĐB có nghiêm cấm hành vi cắt, hàn, tẩy xóa, đục sửa, đóng lại trái phép số khung, số động cơ của xe mô tô, xe gắn máy không?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "13_1",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "13_2",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "13_3",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "content": "Luật TTATGTĐB có nghiêm cấm hành vi lắp đặt, sử dụng thiết bị âm thanh, ánh sáng trên xe cơ giới gây mất trật tự, an toàn giao thông đường bộ không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "14_1",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "14_2",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "14_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "content": "Luật TTATGTĐB có nghiêm cấm hành vi sản xuất, sử dụng, mua, bán trái phép biển số xe không?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "15_1",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "15_2",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "15_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "content": "Trong Luật TTATGTĐB hành vi nào dưới đây bị nghiêm cấm?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "16_1",
+          "content": "Sản xuất, sử dụng, mua, bán trái phép biển số xe.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "16_2",
+          "content": "Điều khiển xe cơ giới gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "16_3",
+          "content": "Bẻ cong, che lấp biển số; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "16_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "content": "Luật TTATGTĐB có nghiêm cấm hành vi bẻ cong, che lấp biển số xe, làm thay đổi chữ, số của biển số xe không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "17_1",
+          "content": "Nghiêm cấm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "17_2",
+          "content": "Không nghiêm cấm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "17_3",
+          "content": "Nghiêm cấm tùy từng trường hợp.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "content": "Luật TTATGTĐB nghiêm cấm hành vi nào dưới đây?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "18_1",
+          "content": "Lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định của pháp luật.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "18_2",
+          "content": "Sử dụng quyền của xe ưu tiên khi không thực hiện nhiệm vụ theo quy định của pháp luật.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "18_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "content": "Hành vi nào dưới đây của người lái xe bị nghiêm cấm khi bị phát hiện vi phạm pháp luật về TTATGTĐB?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "19_1",
+          "content": "Không khai báo, khai báo gian dối.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "19_2",
+          "content": "Cung cấp thông tin, tài liệu không đúng sự thật để trốn tránh trách nhiệm.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "19_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "content": "Luật TTATGTĐB nghiêm cấm các hành vi nào dưới đây?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "20_1",
+          "content": "Bỏ trốn sau khi gây tai nạn giao thông đường bộ để trốn tránh trách nhiệm.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "20_2",
+          "content": "Khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông đường bộ.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "20_3",
+          "content": "Lợi dụng việc xảy ra tai nạn giao thông đường bộ để hành hung, đe dọa, xúi giục, gây sức ép, làm mất trật tự, cản trở việc xử lý tai nạn giao thông đường bộ.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "20_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "content": "Người tham gia giao thông đường bộ phải chấp hành những quy tắc nào dưới đây?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "21_1",
+          "content": "Phải đi bên phải theo chiều đi của mình, đi đúng làn đường và phải chấp hành hệ thống báo hiệu đường bộ.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "21_2",
+          "content": "Phải đi bên phải theo chiều đi của mình, đi đúng làn đường, phần đường quy định, chấp hành báo hiệu đường bộ và các quy tắc giao thông đường bộ khác.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "21_3",
+          "content": "Phải đi bên phải theo chiều đi của mình và phải chấp hành hệ thống báo hiệu đường bộ.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "content": "Khi hiệu lệnh của người điều khiển giao thông trái với tín hiệu đèn giao thông, biển báo hiệu đường bộ, người tham gia giao thông đường bộ phải chấp hành như thế nào?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "22_1",
+          "content": "Hiệu lệnh của người điều khiển giao thông.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "22_2",
+          "content": "Tín hiệu đèn giao thông.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "22_3",
+          "content": "Biển báo hiệu đường bộ.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "content": "Khi người điều khiển giao thông ra hiệu lệnh: “tay bên phải giơ thẳng đứng”, người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "23_1",
+          "content": "Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao thông phải dừng lại; người tham gia giao thông ở phía bên phải và bên trái người điều khiển được đi.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "23_2",
+          "content": "Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao thông được đi thăng; người tham gia giao thông ở phía bên phải và bên trái người điều khiển được đi thẳng và rẽ phải.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "23_3",
+          "content": "Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "content": "Khi người điều khiển giao thông ra hiệu lệnh: “hai tay hoặc một tay dang ngang\", người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "24_1",
+          "content": "Người tham gia giao thông đường bộ ở phía trước và ở phía sau người điều khiển giao thông phải dừng lại; người tham gia giao thông đường bộ ở phía bên phải và bên trái người điều khiển giao thông được đi.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "24_2",
+          "content": "Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao thông được rẽ trái; người tham gia giao thông ở phía bên phải và bên trái của người điều khiển giao thông được đi thẳng và rẽ phải.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "content": "Khi người điều khiển giao thông ra hiệu lệnh: “tay phải giơ về phía trước”, người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "25_1",
+          "content": "Người tham gia giao thông đường bộ ở phía sau và bên phải người điều khiển giao thông phải dừng lại; người đi bộ qua đường phải đi sau lưng người điều khiển giao thông.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "25_2",
+          "content": "Người tham gia giao thông đường bộ ở phía bên trái người điều khiển giao thông được đi tất cả các hướng.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "25_3",
+          "content": "Người tham gia giao thông đường bộ ở phía trước người điều khiển giao thông được rẽ phải.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "25_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "content": "Tại nơi đường giao nhau khi đèn điều khiển giao thông có tín hiệu màu vàng, người tham gia giao thông đường bộ phải thực hiện thế nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "26_1",
+          "content": "Người điều khiển phương tiện nhanh chóng cho xe vượt qua vạch dừng để đi qua đường giao nhau.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "26_2",
+          "content": "Trong trường hợp tín hiệu vàng nhấp nháy là được đi nhưng phải giảm tốc độ và cho xe vượt qua vạch dừng để đi qua đường giao nhau.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "26_3",
+          "content": "Phải dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "content": "Luật TTATGTĐB quy định có bao nhiêu nhóm biển báo hiệu đường bộ?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "27_1",
+          "content": "Ba nhóm: Biển báo cấm, biển báo nguy hiểm và biển hiệu lệnh.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "27_2",
+          "content": "Bốn nhóm: Biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh và biển phụ.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "27_3",
+          "content": "Năm nhóm: Biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh, biển chỉ dẫn, biển phụ.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "content": "Tác dụng của biển báo cấm?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "28_1",
+          "content": "Để biểu thị các điều cấm. Người tham gia giao thông đường bô phải chấp hành những điều cấm mà biển đã báo.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "28_2",
+          "content": "Để biểu thị các điều cấm. Người tham gia giao thông có thể không phải chấp hành những điều cấm mà biển đã báo.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "content": "Tác dụng của biển báo nguy hiểm?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "29_1",
+          "content": "Dùng để báo cho người tham gia giao thông đường bộ biết trước tính chất của sự nguy hiểm hoặc các điều cần chú ý phòng ngừa trên tuyến đường.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "29_2",
+          "content": "Khi gặp biển báo nguy hiểm người tham gia giao thông đường bộ phải giảm tốc độ đến mức cần thiết, chú ý quan sát và chuẩn bị sẵn sàng xử lý những tình huống có thể xảy ra để phòng ngừa tai nạn.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "29_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "content": "Tác dụng của biển hiệu lệnh?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "30_1",
+          "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh phải thi hành.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "30_2",
+          "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh có thể phải thi hành.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "content": "Trong Luật TTATGTĐB, “vạch kẻ đường” được quy định như thế nào?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "31_1",
+          "content": "Vạch kẻ đường là vạch chỉ sự phân biệt vị trí dừng đỗ trên đường.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "31_2",
+          "content": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lai.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "31_3",
+          "content": "Vạch kẻ đường là vạch dùng để phân chia dòng phương tiện hai hướng ngược chiều nhau trên các đường có hai hoặc ba làn xe chạy.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "31_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "content": "Khi ở một vị trí vừa có biển báo hiệu đặt cố định vừa có biển báo hiệu tạm thời mà hai biển có ý nghĩa khác nhau, người tham gia giao thông đường bộ phải chấp hành hiệu lệnh của biển báo nào?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "32_1",
+          "content": "Biển báo hiệu cố định.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "32_2",
+          "content": "Biển báo hiệu tạm thời.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "content": "Tại nơi có vạch kẻ đường hoặc tại nơi mà người đi bộ, xe lăn của người khuyết tật đang qua đường, người điều khiển phương tiện tham gia giao thông đường bộ phải thực hiện như thế nào?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "33_1",
+          "content": "Giảm tốc độ và nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường đảm bảo an toàn.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "33_2",
+          "content": "Quan sát, giảm tốc độ hoặc dừng lai để bảo đảm an toàn cho người đi bộ, xe lăn của người khuyết tật qua đường.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "33_3",
+          "content": "Quan sát, tăng tốc độ và điều khiển phương tiện nhanh chóng đi qua.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "content": "Trường hợp nào dưới đây người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "34_1",
+          "content": "Có biển báo cấm vượt.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "34_2",
+          "content": "Có biển cấm dừng xe, đỗ xe.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "34_3",
+          "content": "Có báo hiệu cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "34_4",
+          "content": "Có biển báo cấm quay đầu xe.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "content": "Trường hợp nào dưới đây người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "35_1",
+          "content": "Gặp xe ưu tiên.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "35_2",
+          "content": "Đường hẹp, đường vòng, đường quanh co, đường đèo, dốc.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "35_3",
+          "content": "Chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "35_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "content": "Trường hợp nào dưới đây người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "36_1",
+          "content": "Khu vực đang tổ chức kiểm soát giao thông đường bộ.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "36_2",
+          "content": "Có vật nuôi đi trên đường hoặc chăn thả ở ven đường.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "36_3",
+          "content": "Điểm dừng xe, đỗ xe trên đường bộ có khách đang lên, xuống xe.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "36_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "content": "Khi qua khu vực đông dân cư, chợ, khu vực đang thi công trên đường bộ người điều khiển phương tiện tham gia giao thông đường bộ phải làm gì?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "37_1",
+          "content": "Phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "37_2",
+          "content": "Phải quan sát, giảm tốc độ và dừng lại để bảo đảm an toàn.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "content": "Luật TTATGTĐB quy định phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi về bên phải theo chiều đi của mình có đúng không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "38_1",
+          "content": "Đúng.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "38_2",
+          "content": "Sai.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "content": "Người điều khiển xe thô sơ, xe cơ giới và xe máy chuyên dùng phải đi như thế nào trên đường một chiều có vạch kẻ phân làn đường?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "39_1",
+          "content": "Xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "39_2",
+          "content": "Xe thô sơ phải đi trên làn đường bên trái trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên phải.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "39_3",
+          "content": "Xe thô sơ đi trên làn đường phù hợp không gây cản trở giao thông, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên phải.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "content": "Luật TTATGTĐB quy định vượt bên phải xe khác trong trường hợp nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "40_1",
+          "content": "Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "40_2",
+          "content": "Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "40_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "content": "Luật TTATGTĐB quy định chỉ được vượt xe khi nào?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "41_1",
+          "content": "Không có chướng ngại vật ở phía trước, không có xe chạy ngược chiều trong đoạn đường định vượt.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "41_2",
+          "content": "Xe chạy trước không có tín hiệu vượt xe khác, đã có tín hiệu rẽ phải và tránh về bên phải.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "41_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "content": "Người lái xe có được vượt xe khác ở phần đường dành cho người đi bộ qua đường không?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "42_1",
+          "content": "Có được vượt.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "42_2",
+          "content": "Không được vượt.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "content": "Trước khi chuyển hướng, người lái xe phải làm gì?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "43_1",
+          "content": "Quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ, chuyển dần sang làn gần nhất với hướng rẽ.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "43_2",
+          "content": "Tín hiệu báo hướng rẽ phải sử dụng liên tục trong quá trình chuyển hướng.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "43_3",
+          "content": "Bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "43_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "content": "Khi chuyển hướng, người lái xe phải làm gì?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "44_1",
+          "content": "Phải giảm tốc độ và có tín hiệu báo hướng rẽ.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "44_2",
+          "content": "Phải nhường quyền đi trước cho người đi bộ, người đi xe đạp đang đi trên phần đường dành riêng cho họ.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "44_3",
+          "content": "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "44_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "content": "Người lái xe tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước khi nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "45_1",
+          "content": "Khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "45_2",
+          "content": "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "45_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "content": "Người lái xe phải tắt đèn chiếu xa, bật đèn chiếu gần trong trường hợp nào dưới đây?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "46_1",
+          "content": "Khi đi trên các đoạn đường qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "46_2",
+          "content": "Khi gặp xe đi ngược chiều, trừ trường hợp dải phân cách có khả năng chống chói.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "46_3",
+          "content": "Khi gặp người đi bộ qua đường; khi chuyển hướng xe tại nơi đường giao nhau.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "46_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "47",
+      "content": "Trường hợp nào dưới đây người lái xe được phép sử dụng tín hiệu còi?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "47_1",
+          "content": "Báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "47_2",
+          "content": "Báo hiệu chuẩn bị vượt xe.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "47_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "content": "Hành vi nào dưới đây của người điều khiển phương tiện tham gia giao thông đường bộ bị cấm?",
+      "image": "",
+      "correctAnswer": "D",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "48_1",
+          "content": "Sử dụng còi liên tục.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "48_2",
+          "content": "Sử dụng còi có âm lượng không đúng quy định.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "48_3",
+          "content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ xe ưu tiên.",
+          "optionLabel": "C"
+        },
+        {
+          "id": "48_4",
+          "content": "Cả ba ý trên.",
+          "optionLabel": "D"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "content": "Tại nơi đường giao nhau giữa đường không ưu tiên với đường ưu tiên hoặc giữa đường nhánh với đường chính, người lái xe đi từ đường không ưu tiên hoặc đường nhánh phải nhường đường như thế nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "49_1",
+          "content": "Phải nhường đường cho xe đi đến từ bên phải.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "49_2",
+          "content": "Phải nhường đường cho xe đi đến từ bên trái.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "49_3",
+          "content": "Nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "content": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện tham gia giao thông đường bộ phải nhường đường như thế nào là đúng quy tắc giao thông?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "50_1",
+          "content": "Phải nhường đường cho xe đi đến từ bên phải.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "50_2",
+          "content": "Phải nhường đường cho xe đi đến từ bên trái.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "51",
+      "content": "Tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện tham gia giao thông đường bộ phải nhường đường như thế nào là đúng quy tắc giao thông?",
+      "image": "",
+      "correctAnswer": "B",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "51_1",
+          "content": "Phải nhường đường cho xe đi đến từ bên phải.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "51_2",
+          "content": "Phải nhường đường cho xe đi đến từ bên trái.",
+          "optionLabel": "B"
+        }
+      ]
+    },
+    {
+      "id": "52",
+      "content": "Thứ tự xuống phà như thế nào là đúng quy tắc giao thông?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "52_1",
+          "content": "Xe thô sơ, người đi bộ xuống phà trước, xe cơ giới, xe máy chuyên dùng xuống phà sau.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "52_2",
+          "content": "Xe cơ giới, xe máy chuyên dùng xuống phà trước, xe thô sơ, người đi bộ xuống phà sau.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "52_3",
+          "content": "Xe cơ giới, xe thô sơ xuống phà trước, xe máy chuyên dùng, người đi bộ xuống phà sau.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "53",
+      "content": "Tại nơi đường bộ giao nhau cùng mức với đường sắt không có người gác, chắn đường bộ, chuông, đèn tín hiệu, người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+      "image": "",
+      "correctAnswer": "C",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "53_1",
+          "content": "Phải dừng lại về bên phải đường của mình, trước vạch dừng xe và quan sát hai phía, khi không có phương tiện đường sắt tới mới được đi qua.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "53_2",
+          "content": "Nếu thấy có phương tiện đường sắt đang đi tới thì phải dừng lại và giữ khoảng cách tối thiểu 5 mét tính từ ray gần nhất và chỉ khi phương tiện đường sắt đã đi qua mới được đi.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "53_3",
+          "content": "Cả hai ý trên.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "content": "Trường hợp nào dưới đây không được đi vào đường cao tốc?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "54_1",
+          "content": "Người đi bộ, xe thô sơ, xe gắn máy, xe mô tô, xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "54_2",
+          "content": "Xe máy chuyên dùng có tốc độ thiết kế lớn hơn tốc độ tối thiểu quy định đối với đường cao tốc.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "54_3",
+          "content": "Xe ô tô con, xe ô tô tải, xe ô tô khách.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "content": "Luật TTATGTĐB có quy định người lái xe khi tham gia giao thông trong hầm đường bộ phải bật đèn chiếu gần không?",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": false,
+      "answers": [
+        {
+          "id": "55_1",
+          "content": "Bắt buộc.",
+          "optionLabel": "A"
+        },
+        {
+          "id": "55_2",
+          "content": "Không bắt buộc.",
+          "optionLabel": "B"
+        },
+        {
+          "id": "55_3",
+          "content": "Tùy trường hợp cụ thể.",
+          "optionLabel": "C"
+        }
+      ]
+    },
+    {
+      "id": "1762330444958",
+      "content": "day la cau hoi",
+      "image": "",
+      "correctAnswer": "A",
+      "isCritical": true,
+      "answers": [
+        {
+          "optionLabel": "A",
+          "content": "Day la dap an 1"
+        },
+        {
+          "optionLabel": "B",
+          "content": "Day la dap an 2"
+        },
+        {
+          "optionLabel": "C",
+          "content": "Day la dap an 3"
         }
       ]
     }
   ],
   "Exams": [
     {
-      "id": "1",
-      "score": 9,
-      "totalQuestion": 10,
-      "correctCount": 9,
-      "takeAt": "08:30:00",
-      "endedAt": "08:45:00",
-      "userId": 2,
-      "passStatus": true
-    },
-    {
-      "id": "2",
-      "score": 7,
-      "totalQuestion": 10,
-      "correctCount": 7,
-      "takeAt": "10:00:00",
-      "endedAt": "10:15:00",
-      "userId": 2,
-      "passStatus": false
-    },
-    {
-      "id": "1762254064642",
-      "score": 0,
-      "totalQuestion": 2,
-      "correctCount": 0,
-      "takeAt": "6:01:04 PM",
-      "endedAt": null,
+      "id": "1762365718756",
+      "title": "bai thi so 1",
+      "score": 2.4,
+      "totalQuestion": 25,
+      "correctCount": 6,
+      "takeAt": "1:01:58 AM",
+      "endedAt": "1:02:33 AM",
       "userId": 1,
-      "passStatus": false
+      "passStatus": false,
+      "questions": [
+        {
+          "id": "1",
+          "content": "Trong Luật TTATGTĐB, “đường ưu tiên” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "1_1",
+              "content": "Đường ưu tiên là đường chỉ dành cho một số loại phương tiện tham gia giao thông, được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "1_2",
+              "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi giao nhau, có thể được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "1_3",
+              "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đường bộ đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "48",
+          "content": "Hành vi nào dưới đây của người điều khiển phương tiện tham gia giao thông đường bộ bị cấm?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "48_1",
+              "content": "Sử dụng còi liên tục.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "48_2",
+              "content": "Sử dụng còi có âm lượng không đúng quy định.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "48_3",
+              "content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ xe ưu tiên.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "48_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "content": "Khi người điều khiển giao thông ra hiệu lệnh: “tay phải giơ về phía trước”, người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "25_1",
+              "content": "Người tham gia giao thông đường bộ ở phía sau và bên phải người điều khiển giao thông phải dừng lại; người đi bộ qua đường phải đi sau lưng người điều khiển giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "25_2",
+              "content": "Người tham gia giao thông đường bộ ở phía bên trái người điều khiển giao thông được đi tất cả các hướng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "25_3",
+              "content": "Người tham gia giao thông đường bộ ở phía trước người điều khiển giao thông được rẽ phải.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "25_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "55",
+          "content": "Luật TTATGTĐB có quy định người lái xe khi tham gia giao thông trong hầm đường bộ phải bật đèn chiếu gần không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "55_1",
+              "content": "Bắt buộc.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "55_2",
+              "content": "Không bắt buộc.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "55_3",
+              "content": "Tùy trường hợp cụ thể.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "content": "Trong Luật TTATGTĐB, “người lái xe” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "4_1",
+              "content": "Là người điều khiển xe cơ giới.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "4_2",
+              "content": "Là người điều khiển xe thô sơ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "4_3",
+              "content": "Là người điều khiển xe máy chuyên dùng.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "content": "Luật TTATGTĐB có nghiêm cấm hành vi bẻ cong, che lấp biển số xe, làm thay đổi chữ, số của biển số xe không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "17_1",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "17_2",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "17_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "20",
+          "content": "Luật TTATGTĐB nghiêm cấm các hành vi nào dưới đây?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "20_1",
+              "content": "Bỏ trốn sau khi gây tai nạn giao thông đường bộ để trốn tránh trách nhiệm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "20_2",
+              "content": "Khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông đường bộ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "20_3",
+              "content": "Lợi dụng việc xảy ra tai nạn giao thông đường bộ để hành hung, đe dọa, xúi giục, gây sức ép, làm mất trật tự, cản trở việc xử lý tai nạn giao thông đường bộ.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "20_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "44",
+          "content": "Khi chuyển hướng, người lái xe phải làm gì?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "44_1",
+              "content": "Phải giảm tốc độ và có tín hiệu báo hướng rẽ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "44_2",
+              "content": "Phải nhường quyền đi trước cho người đi bộ, người đi xe đạp đang đi trên phần đường dành riêng cho họ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "44_3",
+              "content": "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "44_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "content": "Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật là đúng hay sai?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "7_1",
+              "content": "Sai.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "7_2",
+              "content": "Đúng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "7_3",
+              "content": "Tùy trường hợp.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "30",
+          "content": "Tác dụng của biển hiệu lệnh?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "30_1",
+              "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh phải thi hành.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "30_2",
+              "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh có thể phải thi hành.",
+              "optionLabel": "B"
+            }
+          ]
+        },
+        {
+          "id": "45",
+          "content": "Người lái xe tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước khi nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "45_1",
+              "content": "Khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "45_2",
+              "content": "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "45_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "content": "Trong Luật TTATGTĐB, “làn đường” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "2_1",
+              "content": "Là phần của đường bộ được sử dụng cho phương tiện giao thông đi lại.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "2_2",
+              "content": "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "2_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "43",
+          "content": "Trước khi chuyển hướng, người lái xe phải làm gì?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "43_1",
+              "content": "Quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ, chuyển dần sang làn gần nhất với hướng rẽ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "43_2",
+              "content": "Tín hiệu báo hướng rẽ phải sử dụng liên tục trong quá trình chuyển hướng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "43_3",
+              "content": "Bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "43_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "content": "Trong Luật TTATGTĐB, “người tham gia giao thông đường bộ” gồm những thành phần nào?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "3_1",
+              "content": "Người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "3_2",
+              "content": "Người điều khiển, dẫn dắt vật nuôi trên đường bộ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "3_3",
+              "content": "Người đi bộ trên đường bộ.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "3_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "42",
+          "content": "Người lái xe có được vượt xe khác ở phần đường dành cho người đi bộ qua đường không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "42_1",
+              "content": "Có được vượt.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "42_2",
+              "content": "Không được vượt.",
+              "optionLabel": "B"
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "8_1",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "8_2",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "8_3",
+              "content": "Cấm người điều khiển phương tiện giao thông mà trong máu có nồng độ cồn vượt quá 50 miligam/100 mililít máu hoặc vượt quá 0,25 miligam/1lít khí thở.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "40",
+          "content": "Luật TTATGTĐB quy định vượt bên phải xe khác trong trường hợp nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "40_1",
+              "content": "Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "40_2",
+              "content": "Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "40_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "52",
+          "content": "Thứ tự xuống phà như thế nào là đúng quy tắc giao thông?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "52_1",
+              "content": "Xe thô sơ, người đi bộ xuống phà trước, xe cơ giới, xe máy chuyên dùng xuống phà sau.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "52_2",
+              "content": "Xe cơ giới, xe máy chuyên dùng xuống phà trước, xe thô sơ, người đi bộ xuống phà sau.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "52_3",
+              "content": "Xe cơ giới, xe thô sơ xuống phà trước, xe máy chuyên dùng, người đi bộ xuống phà sau.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "content": "Luật TTATGTĐB có nghiêm cấm hành vi giao xe mô tô, xe gắn máy cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "12_1",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "12_2",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "12_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong cơ thể có chất ma túy không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "9_1",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "9_2",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "9_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "31",
+          "content": "Trong Luật TTATGTĐB, “vạch kẻ đường” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "31_1",
+              "content": "Vạch kẻ đường là vạch chỉ sự phân biệt vị trí dừng đỗ trên đường.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "31_2",
+              "content": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lai.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "31_3",
+              "content": "Vạch kẻ đường là vạch dùng để phân chia dòng phương tiện hai hướng ngược chiều nhau trên các đường có hai hoặc ba làn xe chạy.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "31_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ]
+        },
+        {
+          "id": "41",
+          "content": "Luật TTATGTĐB quy định chỉ được vượt xe khi nào?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "41_1",
+              "content": "Không có chướng ngại vật ở phía trước, không có xe chạy ngược chiều trong đoạn đường định vượt.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "41_2",
+              "content": "Xe chạy trước không có tín hiệu vượt xe khác, đã có tín hiệu rẽ phải và tránh về bên phải.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "41_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "content": "Hành vi nào dưới đây của người lái xe bị nghiêm cấm khi bị phát hiện vi phạm pháp luật về TTATGTĐB?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "19_1",
+              "content": "Không khai báo, khai báo gian dối.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "19_2",
+              "content": "Cung cấp thông tin, tài liệu không đúng sự thật để trốn tránh trách nhiệm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "19_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "47",
+          "content": "Trường hợp nào dưới đây người lái xe được phép sử dụng tín hiệu còi?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "47_1",
+              "content": "Báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "47_2",
+              "content": "Báo hiệu chuẩn bị vượt xe.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "47_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "content": "Trong Luật TTATGTĐB, “người điều khiển giao thông đường bộ” gồm những thành phần nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "5_1",
+              "content": "Người điều khiển phương tiện tham gia giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "5_2",
+              "content": "Cảnh sát giao thông và người được giao nhiêm vụ hướng dẫn giao thông trên đường bộ.",
+              "optionLabel": "B"
+            }
+          ]
+        }
+      ]
     }
   ],
   "ExamDetails": [
     {
-      "id": "1",
-      "selectedAnswer": "A",
-      "isCorrect": true,
-      "examsId": 1,
-      "questionsId": 1
-    },
-    {
-      "id": "2",
-      "selectedAnswer": "B",
-      "isCorrect": false,
-      "examsId": 2,
-      "questionsId": 1
-    },
-    {
-      "id": "1762254064642_1",
-      "selectedAnswer": "",
-      "isCorrect": false,
-      "examsId": "1762254064642",
-      "questionsId": "1"
-    },
-    {
-      "id": "1762254064642_2",
-      "selectedAnswer": "",
-      "isCorrect": false,
-      "examsId": "1762254064642",
-      "questionsId": "2"
+      "id": "1762365752997",
+      "examId": "1762365718756",
+      "userId": "4",
+      "title": "bai thi so 1",
+      "score": 2.4,
+      "correctCount": 6,
+      "totalQuestion": 25,
+      "takeAt": "1:01:58 AM",
+      "endedAt": "1:02:32 AM",
+      "passStatus": false,
+      "questions": [
+        {
+          "id": "1",
+          "content": "Trong Luật TTATGTĐB, “đường ưu tiên” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "1_1",
+              "content": "Đường ưu tiên là đường chỉ dành cho một số loại phương tiện tham gia giao thông, được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "1_2",
+              "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi giao nhau, có thể được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "1_3",
+              "content": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện giao thông đường bộ đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "C",
+          "isCorrect": true
+        },
+        {
+          "id": "48",
+          "content": "Hành vi nào dưới đây của người điều khiển phương tiện tham gia giao thông đường bộ bị cấm?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "48_1",
+              "content": "Sử dụng còi liên tục.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "48_2",
+              "content": "Sử dụng còi có âm lượng không đúng quy định.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "48_3",
+              "content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ xe ưu tiên.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "48_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "D",
+          "isCorrect": true
+        },
+        {
+          "id": "25",
+          "content": "Khi người điều khiển giao thông ra hiệu lệnh: “tay phải giơ về phía trước”, người tham gia giao thông đường bộ phải thực hiện như thế nào?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "25_1",
+              "content": "Người tham gia giao thông đường bộ ở phía sau và bên phải người điều khiển giao thông phải dừng lại; người đi bộ qua đường phải đi sau lưng người điều khiển giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "25_2",
+              "content": "Người tham gia giao thông đường bộ ở phía bên trái người điều khiển giao thông được đi tất cả các hướng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "25_3",
+              "content": "Người tham gia giao thông đường bộ ở phía trước người điều khiển giao thông được rẽ phải.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "25_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "D",
+          "isCorrect": true
+        },
+        {
+          "id": "55",
+          "content": "Luật TTATGTĐB có quy định người lái xe khi tham gia giao thông trong hầm đường bộ phải bật đèn chiếu gần không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "55_1",
+              "content": "Bắt buộc.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "55_2",
+              "content": "Không bắt buộc.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "55_3",
+              "content": "Tùy trường hợp cụ thể.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "A",
+          "isCorrect": true
+        },
+        {
+          "id": "4",
+          "content": "Trong Luật TTATGTĐB, “người lái xe” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "4_1",
+              "content": "Là người điều khiển xe cơ giới.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "4_2",
+              "content": "Là người điều khiển xe thô sơ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "4_3",
+              "content": "Là người điều khiển xe máy chuyên dùng.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "A",
+          "isCorrect": true
+        },
+        {
+          "id": "17",
+          "content": "Luật TTATGTĐB có nghiêm cấm hành vi bẻ cong, che lấp biển số xe, làm thay đổi chữ, số của biển số xe không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "17_1",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "17_2",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "17_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "A",
+          "isCorrect": true
+        },
+        {
+          "id": "20",
+          "content": "Luật TTATGTĐB nghiêm cấm các hành vi nào dưới đây?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "20_1",
+              "content": "Bỏ trốn sau khi gây tai nạn giao thông đường bộ để trốn tránh trách nhiệm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "20_2",
+              "content": "Khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông đường bộ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "20_3",
+              "content": "Lợi dụng việc xảy ra tai nạn giao thông đường bộ để hành hung, đe dọa, xúi giục, gây sức ép, làm mất trật tự, cản trở việc xử lý tai nạn giao thông đường bộ.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "20_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "44",
+          "content": "Khi chuyển hướng, người lái xe phải làm gì?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "44_1",
+              "content": "Phải giảm tốc độ và có tín hiệu báo hướng rẽ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "44_2",
+              "content": "Phải nhường quyền đi trước cho người đi bộ, người đi xe đạp đang đi trên phần đường dành riêng cho họ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "44_3",
+              "content": "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "44_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "7",
+          "content": "Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật là đúng hay sai?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "7_1",
+              "content": "Sai.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "7_2",
+              "content": "Đúng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "7_3",
+              "content": "Tùy trường hợp.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "30",
+          "content": "Tác dụng của biển hiệu lệnh?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "30_1",
+              "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh phải thi hành.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "30_2",
+              "content": "Là biển báo cho người tham gia giao thông đường bộ biết hiệu lệnh có thể phải thi hành.",
+              "optionLabel": "B"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "45",
+          "content": "Người lái xe tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước khi nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "45_1",
+              "content": "Khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "45_2",
+              "content": "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "45_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "2",
+          "content": "Trong Luật TTATGTĐB, “làn đường” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "2_1",
+              "content": "Là phần của đường bộ được sử dụng cho phương tiện giao thông đi lại.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "2_2",
+              "content": "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "2_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "43",
+          "content": "Trước khi chuyển hướng, người lái xe phải làm gì?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "43_1",
+              "content": "Quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ, chuyển dần sang làn gần nhất với hướng rẽ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "43_2",
+              "content": "Tín hiệu báo hướng rẽ phải sử dụng liên tục trong quá trình chuyển hướng.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "43_3",
+              "content": "Bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "43_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "3",
+          "content": "Trong Luật TTATGTĐB, “người tham gia giao thông đường bộ” gồm những thành phần nào?",
+          "image": "",
+          "correctAnswer": "D",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "3_1",
+              "content": "Người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "3_2",
+              "content": "Người điều khiển, dẫn dắt vật nuôi trên đường bộ.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "3_3",
+              "content": "Người đi bộ trên đường bộ.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "3_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "42",
+          "content": "Người lái xe có được vượt xe khác ở phần đường dành cho người đi bộ qua đường không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "42_1",
+              "content": "Có được vượt.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "42_2",
+              "content": "Không được vượt.",
+              "optionLabel": "B"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "8",
+          "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn không?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "8_1",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "8_2",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "8_3",
+              "content": "Cấm người điều khiển phương tiện giao thông mà trong máu có nồng độ cồn vượt quá 50 miligam/100 mililít máu hoặc vượt quá 0,25 miligam/1lít khí thở.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "40",
+          "content": "Luật TTATGTĐB quy định vượt bên phải xe khác trong trường hợp nào?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "40_1",
+              "content": "Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "40_2",
+              "content": "Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "40_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "52",
+          "content": "Thứ tự xuống phà như thế nào là đúng quy tắc giao thông?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "52_1",
+              "content": "Xe thô sơ, người đi bộ xuống phà trước, xe cơ giới, xe máy chuyên dùng xuống phà sau.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "52_2",
+              "content": "Xe cơ giới, xe máy chuyên dùng xuống phà trước, xe thô sơ, người đi bộ xuống phà sau.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "52_3",
+              "content": "Xe cơ giới, xe thô sơ xuống phà trước, xe máy chuyên dùng, người đi bộ xuống phà sau.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "12",
+          "content": "Luật TTATGTĐB có nghiêm cấm hành vi giao xe mô tô, xe gắn máy cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "12_1",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "12_2",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "12_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "9",
+          "content": "Luật TTATGTĐB có nghiêm cấm người điều khiển phương tiện tham gia giao thông đường bộ mà trong cơ thể có chất ma túy không?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "9_1",
+              "content": "Không nghiêm cấm.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "9_2",
+              "content": "Nghiêm cấm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "9_3",
+              "content": "Nghiêm cấm tùy từng trường hợp.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "31",
+          "content": "Trong Luật TTATGTĐB, “vạch kẻ đường” được quy định như thế nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "31_1",
+              "content": "Vạch kẻ đường là vạch chỉ sự phân biệt vị trí dừng đỗ trên đường.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "31_2",
+              "content": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lai.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "31_3",
+              "content": "Vạch kẻ đường là vạch dùng để phân chia dòng phương tiện hai hướng ngược chiều nhau trên các đường có hai hoặc ba làn xe chạy.",
+              "optionLabel": "C"
+            },
+            {
+              "id": "31_4",
+              "content": "Cả ba ý trên.",
+              "optionLabel": "D"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "41",
+          "content": "Luật TTATGTĐB quy định chỉ được vượt xe khi nào?",
+          "image": "",
+          "correctAnswer": "A",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "41_1",
+              "content": "Không có chướng ngại vật ở phía trước, không có xe chạy ngược chiều trong đoạn đường định vượt.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "41_2",
+              "content": "Xe chạy trước không có tín hiệu vượt xe khác, đã có tín hiệu rẽ phải và tránh về bên phải.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "41_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "19",
+          "content": "Hành vi nào dưới đây của người lái xe bị nghiêm cấm khi bị phát hiện vi phạm pháp luật về TTATGTĐB?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "19_1",
+              "content": "Không khai báo, khai báo gian dối.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "19_2",
+              "content": "Cung cấp thông tin, tài liệu không đúng sự thật để trốn tránh trách nhiệm.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "19_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "47",
+          "content": "Trường hợp nào dưới đây người lái xe được phép sử dụng tín hiệu còi?",
+          "image": "",
+          "correctAnswer": "C",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "47_1",
+              "content": "Báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "47_2",
+              "content": "Báo hiệu chuẩn bị vượt xe.",
+              "optionLabel": "B"
+            },
+            {
+              "id": "47_3",
+              "content": "Cả hai ý trên.",
+              "optionLabel": "C"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        },
+        {
+          "id": "5",
+          "content": "Trong Luật TTATGTĐB, “người điều khiển giao thông đường bộ” gồm những thành phần nào?",
+          "image": "",
+          "correctAnswer": "B",
+          "isCritical": false,
+          "answers": [
+            {
+              "id": "5_1",
+              "content": "Người điều khiển phương tiện tham gia giao thông.",
+              "optionLabel": "A"
+            },
+            {
+              "id": "5_2",
+              "content": "Cảnh sát giao thông và người được giao nhiêm vụ hướng dẫn giao thông trên đường bộ.",
+              "optionLabel": "B"
+            }
+          ],
+          "selectedAnswer": "",
+          "isCorrect": false
+        }
+      ]
     }
   ]
 }

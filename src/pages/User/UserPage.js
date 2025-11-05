@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "../../components/Header";
 
 function UserPage({ user, onLogout }) {
   const navigate = useNavigate();
@@ -9,28 +10,7 @@ function UserPage({ user, onLogout }) {
   return (
     <>
       {/* ===== HEADER ===== */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-        <div className="container">
-          <a className="navbar-brand fw-bold fs-4" href="/">
-            🚗 DriveTestHub
-          </a>
-
-          <div className="collapse navbar-collapse justify-content-end">
-            <div className="d-flex align-items-center">
-              <span className="text-white me-3">
-                Xin chào, <strong>{user.fullName}</strong>
-              </span>
-              <button
-                className="btn btn-outline-light btn-sm px-3"
-                onClick={onLogout}
-              >
-                Đăng xuất
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <Header user={user} onLogout={onLogout} />
       {/* ===== BODY CONTENT ===== */}
       <div className="container py-5 text-center">
         <h2 className="text-success mb-3">Chào mừng {user.fullName} 👋</h2>
@@ -44,6 +24,12 @@ function UserPage({ user, onLogout }) {
             onClick={() => navigate("/exams")}
           >
             📚 Xem danh sách bài thi
+          </button>
+          <button
+            className="btn btn-outline-primary"
+            onClick={() => navigate("/user/history")}
+          >
+            📜 Lịch sử thi
           </button>
 
           <button
