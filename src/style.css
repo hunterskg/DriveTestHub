@@ -1,0 +1,25 @@
+/* Header */
+.navbar {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar .btn {
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .btn:hover {
+  transform: translateY(-2px);
+}
+

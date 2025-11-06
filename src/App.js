@@ -12,6 +12,8 @@ import ExamPage from "./pages/User/ExamPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UserHistoryPage from "./pages/User/UserHistoryPage";
 import ExamReviewPage from "./pages/User/ExamReviewPage";
+import PracticeExamPage from "./pages/User/PracticeExamPage";
+import './style.css';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -100,6 +102,7 @@ function AppRoutes({ user, setUser }) {
   path="/exam/review/:examId"
   element={<ExamReviewPage user={user} onLogout={handleLogout} />}
 />
+<Route path="/practice" element={<PracticeExamPage user={user} onLogout={handleLogout} />} />
 
 
     </Routes>

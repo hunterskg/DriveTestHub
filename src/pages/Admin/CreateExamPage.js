@@ -1,102 +1,137 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import api from "../../api/axiosClient";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../../components/Header";
+import { useNavigate } from "react-router-dom";
+import "./CreateExamPage.css";
 
 function CreateExamPage({ user, onLogout }) {
-  const [totalQuestions, setTotalQuestions] = useState(25);
-  const [criticalCount, setCriticalCount] = useState(5);
+  const [questions, setQuestions] = useState([]);
+  const [startId, setStartId] = useState("");
   const [message, setMessage] = useState("");
   const [title, setTitle] = useState("");
+  const navigate = useNavigate();
 
-  const getRandomItems = (arr, count) =>
-    arr.sort(() => 0.5 - Math.random()).slice(0, count);
+  useEffect(() => {
+    fetchQuestions();
+  }, []);
+
+  const fetchQuestions = async () => {
+    try {
+      const { data } = await api.get("/Questions");
+      const sorted = data.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+      setQuestions(sorted);
+    } catch (error) {
+      console.error("❌ Lỗi khi tải câu hỏi:", error);
+      setMessage("Không thể tải danh sách câu hỏi!");
+    }
+  };
 
   const handleCreateExam = async () => {
     try {
-      const { data: questions } = await api.get("/Questions");
-
-      const critical = questions.filter((q) => q.isCritical);
-      const normal = questions.filter((q) => !q.isCritical);
-
-      if (critical.length < criticalCount) {
-        setMessage("❌ Không đủ số lượng câu điểm liệt trong ngân hàng đề thi!");
+      if (!startId) {
+        setMessage("⚠️ Vui lòng chọn câu hỏi bắt đầu!");
         return;
       }
 
-      // 👉 Lấy ngẫu nhiên các câu hỏi
-      const selectedQuestions = [
-        ...getRandomItems(critical, criticalCount),
-        ...getRandomItems(normal, totalQuestions - criticalCount),
-      ];
+      const startIndex = questions.findIndex((q) => q.id === startId);
+      if (startIndex === -1) {
+        setMessage("❌ Không tìm thấy câu hỏi bắt đầu!");
+        return;
+      }
 
-      // 👉 Tạo bài thi mới (có chứa danh sách câu hỏi)
+      // 👉 Lấy 25 câu bắt đầu từ ID chọn
+      const selectedQuestions = questions.slice(startIndex, startIndex + 25);
+      if (selectedQuestions.length < 25) {
+        setMessage("⚠️ Không đủ 25 câu từ câu hỏi này!");
+        return;
+      }
+
       const newExam = {
         id: Date.now().toString(),
-        title: title,
-        score: 0,
+        title: title || `Bài thi từ câu ${startId}`,
         totalQuestion: selectedQuestions.length,
-        correctCount: 0,
-        takeAt: new Date().toLocaleTimeString(),
-        endedAt: null,
-        userId: 1, // ID admin
-        passStatus: false,
-        questions: selectedQuestions, // 👈 Thêm danh sách câu hỏi
+        questions: selectedQuestions,
       };
 
       await api.post("/Exams", newExam);
-
-     
-
-      setMessage("Tạo bài thi thành công!");
+      setMessage("✅ Tạo bài thi thành công!");
     } catch (error) {
       console.error(error);
-      setMessage("Lỗi khi tạo bài thi!");
+      setMessage("❌ Lỗi khi tạo bài thi!");
     }
   };
 
   return (
     <>
-    <Header user={user} onLogout={onLogout} />
-    <div className="container mt-4">
-      <h2 className="text-primary mb-4">Tạo bài thi ngẫu nhiên</h2>
+      <Header user={user} onLogout={onLogout} />
 
-      {message && <div className="alert alert-info">{message}</div>}
-      <div className="mb-3">
-        <label className="form-label">Tiêu đề bài thi:</label>
-        <input
-          type="text"
-          className="form-control"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+      <div className="exam-create-container">
+        <div className="card shadow-lg border-0 p-4 rounded-4 bg-white">
+          <h2 className="text-primary fw-bold mb-4 text-center">
+            🧾 Tạo bài thi theo thứ tự ID
+          </h2>
+
+          {message && (
+            <div
+              className={`alert ${
+                message.includes("✅")
+                  ? "alert-success"
+                  : message.includes("⚠️")
+                  ? "alert-warning"
+                  : "alert-danger"
+              } text-center`}
+            >
+              {message}
+            </div>
+          )}
+
+          <div className="mb-3">
+            <label className="form-label fw-semibold">Tiêu đề bài thi:</label>
+            <input
+              type="text"
+              className="form-control"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="Nhập tên bài thi..."
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="form-label fw-semibold">Chọn câu hỏi bắt đầu:</label>
+            <select
+              className="form-select"
+              value={startId}
+              onChange={(e) => setStartId(e.target.value)}
+            >
+              <option value="">-- Chọn ID bắt đầu --</option>
+              {questions.map((q) => (
+                <option key={q.id} value={q.id}>
+                  {`#${q.id} - ${q.content.slice(0, 40)}${
+                    q.content.length > 40 ? "..." : ""
+                  }`}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="d-flex flex-column gap-3">
+            <button
+              className="btn btn-primary rounded-pill"
+              onClick={handleCreateExam}
+            >
+              🚗 Tạo bài thi
+            </button>
+
+            <button
+              className="btn btn-outline-secondary rounded-pill"
+              onClick={() => navigate("/admin")}
+            >
+              ⬅ Quay lại trang quản trị
+            </button>
+          </div>
+        </div>
       </div>
-      
-
-      <div className="mb-3">
-        <label className="form-label">Tổng số câu:</label>
-        <input
-          type="number"
-          className="form-control"
-          value={totalQuestions}
-          onChange={(e) => setTotalQuestions(parseInt(e.target.value))}
-        />
-      </div>
-
-      <div className="mb-3">
-        <label className="form-label">Số câu điểm liệt:</label>
-        <input
-          type="number"
-          className="form-control"
-          value={criticalCount}
-          onChange={(e) => setCriticalCount(parseInt(e.target.value))}
-        />
-      </div>
-
-      <button className="btn btn-primary w-100" onClick={handleCreateExam}>
-        🚗 Tạo bài thi
-      </button>
-    </div>
     </>
   );
 }

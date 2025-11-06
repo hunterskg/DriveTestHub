@@ -1,0 +1,34 @@
+.userpage-body {
+  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  min-height: 80vh;
+}
+
+/* Card style */
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.25);
+}
+
+.feature-card img {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover img {
+  transform: scale(1.05);
+}
+
+.feature-card h5 {
+  margin-top: 8px;
+  color: #007bff;
+}
+
+.text-primary {
+  color: #007bff !important;
+}

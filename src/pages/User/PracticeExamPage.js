@@ -1,17 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import api from "../../api/axiosClient";
+
 import { Modal, Button } from "react-bootstrap";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./ExamPage.css"; // tái sử dụng CSS
+import "./ExamPage.css"; // 👈 tái sử dụng style của ExamPage
+import { generateRandomExam } from "../../ultil/randomExam";
 
 const EXAM_DURATION = 19 * 60; // 19 phút
 
-function ExamPage({ user }) {
-  const { id } = useParams();
-  const navigate = useNavigate();
-
+function PracticeExamPage({ user }) {
   const [exam, setExam] = useState(null);
   const [answers, setAnswers] = useState({});
   const [marked, setMarked] = useState([]);
@@ -20,41 +21,29 @@ function ExamPage({ user }) {
   const [submitted, setSubmitted] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [showConfirm, setShowConfirm] = useState(false);
   const [startTime, setStartTime] = useState(null);
 
-
   const timerRef = useRef(null);
+  const navigate = useNavigate();
   const userId = user?.id;
-  const STORAGE_KEY = `exam_progress_${userId}_${id}`;
 
-  // ✅ Load bài thi
   useEffect(() => {
-    const fetchExam = async () => {
-      try {
-        const res = await axios.get(`http://localhost:9999/Exams/${id}`);
-        setExam(res.data);
+    if (!user) return;
+
+    api
+      .get("/Questions")
+      .then((res) => {
+        const createdExam = generateRandomExam(res.data, user.id);
+        setExam(createdExam);
         setStartTime(new Date());
-        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-        if (saved && saved.answers && saved.remainingTime > 0) {
-          setAnswers(saved.answers);
-          setMarked(saved.marked || []);
-          setCurrentIndex(saved.currentIndex || 0);
-          setTimeLeft(saved.remainingTime);
-        }
-      } catch (err) {
-        console.error("❌ Lỗi tải bài:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchExam();
-  }, [id]);
+      })
+      .catch((err) => console.error("❌ Lỗi tải câu hỏi:", err));
+  }, [user]);
 
-  // ⏰ Đếm ngược
+  // đếm ngược
   useEffect(() => {
-    if (loading || submitted) return;
+    if (!exam || submitted) return;
+
     timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
@@ -65,21 +54,12 @@ function ExamPage({ user }) {
         return prev - 1;
       });
     }, 1000);
+
     return () => clearInterval(timerRef.current);
-  }, [loading, submitted]);
+  }, [exam, submitted]);
 
-  // 💾 Lưu tiến độ
-  useEffect(() => {
-    if (exam && !submitted) {
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({ answers, marked, currentIndex, remainingTime: timeLeft })
-      );
-    }
-  }, [answers, marked, currentIndex, timeLeft, submitted]);
-
-  const handleSelect = (qId, optionLabel) => {
-    setAnswers({ ...answers, [qId]: optionLabel });
+  const handleSelect = (qId, option) => {
+    setAnswers({ ...answers, [qId]: option });
   };
 
   const toggleMark = (qId) => {
@@ -88,35 +68,33 @@ function ExamPage({ user }) {
     );
   };
 
-  const handleSubmit = async () => {
-    if (!exam || !userId) return;
+  const handleSubmit = () => {
+    if (!exam) return;
     clearInterval(timerRef.current);
 
     let correct = 0;
-    let criticalWrong = false;
+    let criticalFail = false;
 
     exam.questions.forEach((q) => {
       const selected = answers[q.id];
       const isCorrect = selected === q.correctAnswer;
       if (isCorrect) correct++;
-      if (q.isCritical && !isCorrect) criticalWrong = true;
+      if (q.isCritical && !isCorrect) criticalFail = true;
     });
 
-    const score = ((correct / exam.questions.length) * 10).toFixed(1);
-    const pass = !criticalWrong && score >= 8.4;
+    const score = correct;
+    const pass = !criticalFail && correct >= 21;
 
-    const resultData = { score, correct, total: exam.questions.length, pass };
-    setResult(resultData);
-    setShowModal(true);
+    setResult({ score, correct, total: exam.questions.length, pass });
     setSubmitted(true);
-    localStorage.removeItem(STORAGE_KEY);
-    
+    setShowModal(true);
+
     const examDetail = {
       id: `${Date.now()}`,
       examId: exam.id,
       userId,
-      title: exam.title,
-      score: Number(score),
+      title: "Tự luyện đề",
+      score,
       correctCount: correct,
       totalQuestion: exam.questions.length,
       takeAt: startTime.toLocaleString("vi-VN"),
@@ -129,11 +107,10 @@ function ExamPage({ user }) {
       })),
     };
 
-    try {
-      await axios.post("http://localhost:9999/ExamDetails", examDetail);
-    } catch (err) {
-      console.error("❌ Lỗi lưu kết quả:", err);
-    }
+    api
+      .post("/ExamDetails", examDetail)
+      .then(() => console.log("✅ Đã lưu kết quả luyện tập"))
+      .catch((err) => console.error(err));
   };
 
   const formatTime = (s) =>
@@ -142,19 +119,16 @@ function ExamPage({ user }) {
       "0"
     )}`;
 
-  if (loading)
-    return (
-      <div className="d-flex flex-column justify-content-center align-items-center vh-100"
-        style={{ background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)" }}>
-        <div className="spinner-border text-primary mb-3"></div>
-        <p className="text-muted">Đang tải bài thi...</p>
-      </div>
-    );
-
   if (!exam)
     return (
-      <div className="container text-center mt-5">
-        <div className="alert alert-danger">Không tìm thấy bài thi.</div>
+      <div
+        className="d-flex flex-column justify-content-center align-items-center vh-100"
+        style={{
+          background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)",
+        }}
+      >
+        <div className="spinner-border text-primary mb-3"></div>
+        <p className="text-muted">Đang tạo đề thi...</p>
       </div>
     );
 
@@ -169,34 +143,12 @@ function ExamPage({ user }) {
         background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)",
       }}
     >
-      {/* Modal xác nhận nộp bài */}
-      <Modal show={showConfirm} onHide={() => setShowConfirm(false)} centered>
-        <div className="modal-header bg-warning">
-          <h5 className="modal-title text-dark">Xác nhận nộp bài</h5>
-        </div>
-        <div className="modal-body text-center">
-          <p>Bạn có chắc chắn muốn nộp bài không? Sau khi nộp sẽ không thể thay đổi.</p>
-          <div className="d-flex justify-content-center gap-3 mt-3">
-            <Button variant="secondary" onClick={() => setShowConfirm(false)}>
-              Hủy
-            </Button>
-            <Button
-              variant="danger"
-              onClick={() => {
-                setShowConfirm(false);
-                handleSubmit();
-              }}
-            >
-              Nộp bài
-            </Button>
-          </div>
-        </div>
-      </Modal>
+      
 
       {/* Modal kết quả */}
       <Modal show={showModal} centered>
         <div className="modal-header bg-success text-white">
-          <h5 className="modal-title">✅ Kết quả bài thi</h5>
+          <h5 className="modal-title">✅ Kết quả luyện tập</h5>
         </div>
         <div className="modal-body text-center">
           <h4 className="fw-bold text-success">
@@ -214,7 +166,10 @@ function ExamPage({ user }) {
           <Button
             variant="primary"
             className="w-100 mt-3 rounded-pill"
-            onClick={() => navigate("/user/history")}
+            onClick={() => {
+              setShowModal(false);
+              navigate("/user/history");
+            }}
           >
             Xem chi tiết bài thi
           </Button>
@@ -236,8 +191,8 @@ function ExamPage({ user }) {
                   const cls = markedQ
                     ? "btn-warning"
                     : answered
-                      ? "btn-success"
-                      : "btn-outline-secondary";
+                    ? "btn-success"
+                    : "btn-outline-secondary";
                   return (
                     <button
                       key={item.id}
@@ -262,26 +217,28 @@ function ExamPage({ user }) {
               </p>
 
               <div
-                className={`alert mt-3 py-2 ${timeLeft < 60 ? "alert-danger" : "alert-info"
-                  }`}
+                className={`alert mt-3 py-2 ${
+                  timeLeft < 60 ? "alert-danger" : "alert-info"
+                }`}
               >
                 ⏰ Còn lại: <strong>{formatTime(timeLeft)}</strong>
               </div>
 
-              <Button
+              <button
                 className="btn btn-danger w-100 mt-2 rounded-pill"
-                onClick={() => setShowConfirm(true)}
+                onClick={handleSubmit}
               >
                 <i className="bi bi-send me-1"></i> Nộp bài
-              </Button>
+              </button>
             </div>
           </div>
 
           {/* Nội dung câu hỏi */}
           <div className="col-md-9">
             <div
-              className={`card shadow-sm border-0 rounded-4 p-4 ${q.isCritical ? "border-danger border-2" : ""
-                }`}
+              className={`card shadow-sm border-0 rounded-4 p-4 ${
+                q.isCritical ? "border-danger border-2" : ""
+              }`}
             >
               <h5 className="fw-bold">
                 Câu {currentIndex + 1}: {q.content}
@@ -343,8 +300,9 @@ function ExamPage({ user }) {
         </div>
       </div>
 
+     
     </div>
   );
 }
 
-export default ExamPage;
+export default PracticeExamPage;

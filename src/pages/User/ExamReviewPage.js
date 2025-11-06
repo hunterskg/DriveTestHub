@@ -1,4 +1,3 @@
-// src/pages/User/ExamReviewPage.js
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import api from "../../api/axiosClient";
@@ -18,63 +17,82 @@ function ExamReviewPage({ user, onLogout }) {
         const { data } = await api.get(`/ExamDetails/${examId}`);
         setExam(data);
       } catch (error) {
-        console.error("Lỗi khi tải dữ liệu bài thi:", error);
+        console.error("❌ Lỗi khi tải dữ liệu bài thi:", error);
       } finally {
         setLoading(false);
       }
     };
-
     fetchExam();
   }, [examId]);
 
-  if (loading) {
+  if (loading)
     return (
-      <div className="container mt-5 text-center">
-        <div className="spinner-border text-primary" />
-        <p>Đang tải dữ liệu bài thi...</p>
+      <div
+        className="d-flex flex-column justify-content-center align-items-center vh-100"
+        style={{
+          background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)",
+        }}
+      >
+        <div className="spinner-border text-primary mb-3"></div>
+        <p className="text-muted">Đang tải dữ liệu bài thi...</p>
       </div>
     );
-  }
 
-  if (!exam) {
+  if (!exam)
     return (
-      <div className="container mt-5 text-center">
+      <div
+        className="container mt-5 text-center"
+        style={{
+          background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)",
+        }}
+      >
         <h4 className="text-danger">Không tìm thấy bài thi!</h4>
       </div>
     );
-  }
 
   return (
-    <>
+    <div
+      className="min-vh-100 d-flex flex-column"
+      style={{
+        background: "linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%)",
+      }}
+    >
+      {/* ===== HEADER ===== */}
       <Header user={user} onLogout={onLogout} />
 
-      <div className="container my-5">
+      {/* ===== MAIN CONTENT ===== */}
+      <div className="container py-5 flex-grow-1">
         {/* --- Thông tin bài thi --- */}
-        <div className="card shadow-sm mb-4">
+        <div className="card shadow-sm border-0 rounded-4 mb-4">
           <div className="card-body">
-            <h3 className="text-primary">{exam.title}</h3>
-            <p className="mb-1">
-              🕒 Bắt đầu: <strong>{exam.takeAt}</strong>
-            </p>
-            <p className="mb-1">
-              ✅ Số câu đúng: <strong>{exam.correctCount}</strong> /{" "}
-              {exam.totalQuestion}
-            </p>
-            <p className="mb-1">
-              🎯 Điểm: <strong>{exam.score}</strong>
-            </p>
-            <p className="mb-1">
-              Trạng thái:{" "}
-              <span
-                className={`badge ${
-                  exam.passStatus ? "bg-success" : "bg-danger"
-                }`}
-              >
-                {exam.passStatus ? "Đạt" : "Không đạt"}
-              </span>
-            </p>
+            <h3 className="text-primary fw-bold mb-3">{exam.title}</h3>
+            <div className="row g-2 small text-muted">
+              <div className="col-md-6">
+                🕒 Bắt đầu: <strong>{exam.takeAt}</strong>
+              </div>
+              <div className="col-md-6">
+                ✅ Số câu đúng:{" "}
+                <strong>
+                  {exam.correctCount}/{exam.totalQuestion}
+                </strong>
+              </div>
+              <div className="col-md-6">
+                🎯 Điểm: <strong>{exam.score}</strong>
+              </div>
+              <div className="col-md-6">
+                Trạng thái:{" "}
+                <span
+                  className={`badge px-3 py-2 ${
+                    exam.passStatus ? "bg-success" : "bg-danger"
+                  }`}
+                >
+                  {exam.passStatus ? "Đỗ" : "Trượt"}
+                </span>
+              </div>
+            </div>
+
             <button
-              className="btn btn-outline-secondary mt-3"
+              className="btn btn-outline-secondary mt-3 rounded-pill"
               onClick={() => navigate("/user/history")}
             >
               ⬅ Quay lại lịch sử
@@ -85,19 +103,30 @@ function ExamReviewPage({ user, onLogout }) {
         {/* --- Danh sách câu hỏi --- */}
         {exam.questions && exam.questions.length > 0 ? (
           exam.questions.map((q, index) => (
-            <div key={q.id} className="card mb-3">
+            <div
+              key={q.id}
+              className="card shadow-sm border-0 rounded-4 mb-4"
+            >
               <div className="card-body">
-                <h5>
+                <h5 className="fw-bold mb-2">
                   Câu {index + 1}: {q.content}
+                  {q.isCritical && (
+                    <span className="badge bg-danger ms-2">Điểm liệt</span>
+                  )}
                 </h5>
 
                 {q.image && (
-                  <img
-                    src={q.image}
-                    alt="question"
-                    className="img-fluid rounded my-2"
-                    style={{ maxWidth: "300px" }}
-                  />
+                  <div className="text-center my-3">
+                    <img
+                      src={q.image}
+                      alt="question"
+                      className="img-fluid rounded shadow-sm"
+                      style={{
+                        maxWidth: "400px",
+                        borderRadius: "10px",
+                      }}
+                    />
+                  </div>
                 )}
 
                 <ul className="list-group">
@@ -105,24 +134,30 @@ function ExamReviewPage({ user, onLogout }) {
                     const isCorrect = ans.optionLabel === q.correctAnswer;
                     const isSelected = q.selectedAnswer === ans.optionLabel;
 
-                    let itemClass = "list-group-item";
+                    let itemClass =
+                      "list-group-item d-flex justify-content-between align-items-center";
                     if (isSelected && isCorrect)
-                      itemClass += " list-group-item-success"; // đúng
+                      itemClass += " list-group-item-success";
                     else if (isSelected && !isCorrect)
-                      itemClass += " list-group-item-danger"; // sai
-                    else if (isCorrect) itemClass += " list-group-item-info"; // đáp án đúng
+                      itemClass += " list-group-item-danger";
+                    else if (isCorrect)
+                      itemClass += " list-group-item-info";
 
                     return (
                       <li key={ans.optionLabel} className={itemClass}>
-                        <strong>{ans.optionLabel}.</strong> {ans.content}
-                        {isSelected && (
-                          <span className="badge bg-dark ms-2">Đã chọn</span>
-                        )}
-                        {isCorrect && (
-                          <span className="badge bg-success ms-2">
-                            Đáp án đúng
-                          </span>
-                        )}
+                        <div>
+                          <strong>{ans.optionLabel}.</strong> {ans.content}
+                        </div>
+                        <div>
+                          {isSelected && (
+                            <span className="badge bg-dark ms-2">Đã chọn</span>
+                          )}
+                          {isCorrect && (
+                            <span className="badge bg-success ms-2">
+                              Đáp án đúng
+                            </span>
+                          )}
+                        </div>
                       </li>
                     );
                   })}
@@ -131,12 +166,15 @@ function ExamReviewPage({ user, onLogout }) {
             </div>
           ))
         ) : (
-          <p className="text-muted">Không có câu hỏi nào trong bài thi.</p>
+          <p className="text-muted text-center">
+            Không có câu hỏi nào trong bài thi.
+          </p>
         )}
       </div>
 
+      {/* ===== FOOTER ===== */}
       <Footer />
-    </>
+    </div>
   );
 }
 

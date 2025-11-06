@@ -1,0 +1,92 @@
+
+
+/* Bảng hiển thị câu hỏi */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.table img {
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.table img:hover {
+  transform: scale(1.4);
+}
+
+/* Nút */
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #007bff, #00b4d8);
+  color: white;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body {
+  background-color: #f9fbfd;
+}
+
+/* Input, Textarea */
+.form-control {
+  border-radius: 6px;
+  border-color: #dee2e6;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* Ảnh xem trước */
+img[alt="preview"] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+}
+
+/* Hiệu ứng fade-in */
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

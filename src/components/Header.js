@@ -1,49 +1,56 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Header.css";
 
 function Header({ user, onLogout }) {
   const navigate = useNavigate();
-
+ const handleLogoClick = () => {
+    if (!user) {
+      navigate("/"); 
+    } else if (user.role === 1) {
+      navigate("/admin");
+    } else {
+      navigate("/user");
+    }
+  };
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-dark header-gradient shadow-sm">
       <div className="container">
-        <a
+         <span
           className="navbar-brand fw-bold fs-4 text-white"
-          href="/"
-          style={{ textDecoration: "none" }}
+          onClick={handleLogoClick}
+          style={{ textDecoration: "none", cursor: "pointer" }}
         >
           🚗 DriveTestHub
-        </a>
+        </span>
 
         <div className="collapse navbar-collapse justify-content-end">
-          {/* Nếu user đã đăng nhập */}
           {user ? (
             <div className="d-flex align-items-center gap-3 text-white">
-              <span>
+              <span className="user-name">
                 Xin chào, <strong>{user.fullName}</strong>
               </span>
               <button
-                className="btn btn-light btn-sm px-3"
+                className="btn btn-light btn-sm px-3 logout-btn"
                 onClick={onLogout}
               >
-                🚪 Đăng xuất
+                <i className="bi bi-box-arrow-right me-1"></i> Đăng xuất
               </button>
             </div>
           ) : (
-            /* Nếu chưa đăng nhập */
             <div className="d-flex align-items-center gap-2">
               <button
                 className="btn btn-light btn-sm px-3"
                 onClick={() => navigate("/login?role=user")}
               >
-                👤 User
+                <i className="bi bi-person-fill me-1"></i> User
               </button>
               <button
                 className="btn btn-outline-light btn-sm px-3"
                 onClick={() => navigate("/login?role=admin")}
               >
-                🛠️ Admin
+                <i className="bi bi-gear-fill me-1"></i> Admin
               </button>
             </div>
           )}

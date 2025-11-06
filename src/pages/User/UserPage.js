@@ -1,53 +1,95 @@
-// src/pages/UserPage.js
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../../components/Header";
+import "./UserPage.css"; // 👈 thêm file CSS riêng
+import Footer from "../../components/Footer";
 
 function UserPage({ user, onLogout }) {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user, navigate]);
+
+  if (!user) return null;
 
   return (
     <>
       {/* ===== HEADER ===== */}
       <Header user={user} onLogout={onLogout} />
+
       {/* ===== BODY CONTENT ===== */}
-      <div className="container py-5 text-center">
-        <h2 className="text-success mb-3">Chào mừng {user.fullName} 👋</h2>
-        <p className="text-muted">
+      <div className="userpage-body container py-5 text-center">
+        
+        <p className="text-muted mb-4">
           Chọn một trong các chức năng bên dưới để bắt đầu.
         </p>
 
-        <div className="d-flex justify-content-center gap-3 mt-4">
-          <button
-            className="btn btn-outline-primary px-4"
-            onClick={() => navigate("/exams")}
-          >
-            📚 Xem danh sách bài thi
-          </button>
-          <button
-            className="btn btn-outline-primary"
-            onClick={() => navigate("/user/history")}
-          >
-            📜 Lịch sử thi
-          </button>
+        <div className="row justify-content-center g-4 mt-3">
+          {/* CARD 1 - Danh sách bài thi */}
+          <div className="col-10 col-sm-6 col-md-4">
+            <div
+              className="feature-card shadow-sm p-3 border-0"
+              onClick={() => navigate("/exams")}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3429/3429425.png"
+                alt="Exams"
+                width="80"
+                className="mx-auto mb-2"
+              />
+              <h5 className="fw-bold text-primary">Danh sách bài thi</h5>
+              <p className="text-muted small">
+                Xem và luyện tập các đề thi sát hạch.
+              </p>
+            </div>
+          </div>
 
-          <button
-            className="btn btn-outline-secondary px-4"
-            onClick={onLogout}
-          >
-            🚪 Đăng xuất
-          </button>
+          {/* CARD 2 - Lịch sử thi */}
+          <div className="col-10 col-sm-6 col-md-4">
+            <div
+              className="feature-card shadow-sm p-3 border-0"
+              onClick={() => navigate("/user/history")}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/32/32223.png"
+                alt="History"
+                width="80"
+                className="mx-auto mb-2"
+              />
+              <h5 className="fw-bold text-primary">Lịch sử làm bài</h5>
+              <p className="text-muted small">
+                Xem kết quả và phân tích các bài thi trước đó.
+              </p>
+            </div>
+          </div>
+
+          {/* CARD 3 - Tự luyện đề ngẫu nhiên */}
+          <div className="col-10 col-sm-6 col-md-4">
+            <div
+              className="feature-card shadow-sm p-3 border-0"
+              onClick={() => navigate("/practice")}
+            >
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/language-learning-3/512/practice-study-learning-education-knowledge-512.png"
+                alt="Practice"
+                width="80"
+                className="mx-auto mb-2"
+              />
+              <h5 className="fw-bold text-primary">Tự luyện đề ngẫu nhiên</h5>
+              <p className="text-muted small">
+                🧠 Hệ thống tạo ngẫu nhiên đề thi để bạn thử sức mọi lúc.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* ===== FOOTER ===== */}
-      <footer className="bg-light text-center py-3 border-top mt-5">
-        <p className="mb-1 text-muted">
-          © {new Date().getFullYear()} <strong>DriveTestHub</strong> — Hệ thống
-          thi bằng lái xe.
-        </p>
-      </footer>
+      <Footer />
+      
     </>
   );
 }

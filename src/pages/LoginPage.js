@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import api from "../api/axiosClient";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css"; // 👈 Thêm dòng này
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./LoginPage.css"; // 👈 Thêm CSS riêng
 
 function LoginPage({ onLogin }) {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const roleParam = params.get("role"); // "user" hoặc "admin"
+  const roleParam = params.get("role");
 
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // 👈 Trạng thái hiển thị mật khẩu
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -46,40 +47,42 @@ function LoginPage({ onLogin }) {
   };
 
   return (
-    <div className="container d-flex flex-column justify-content-center align-items-center vh-100">
-      <div className="card shadow p-4" style={{ maxWidth: "400px", width: "100%" }}>
-        <h2 className="text-center text-primary mb-4">
+    <div className="login-page d-flex justify-content-center align-items-center vh-100">
+      <div className="login-card shadow-lg p-4 rounded-4">
+        <h2 className="text-center text-primary mb-4 fw-bold">
           {roleParam === "admin" ? "🛠️ Đăng nhập Admin" : "👤 Đăng nhập User"}
         </h2>
 
         {error && <div className="alert alert-danger py-2">{error}</div>}
 
         <form onSubmit={handleLogin}>
-          {/* ===== USERNAME ===== */}
-          <div className="mb-3">
-            <label className="form-label">Tên đăng nhập</label>
+          {/* USERNAME */}
+          <div className="mb-3 text-start">
+            <label className="form-label fw-semibold">Tên đăng nhập</label>
             <input
               type="text"
-              className="form-control"
+              className="form-control rounded-pill px-3"
+              placeholder="Nhập tên đăng nhập..."
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
               required
             />
           </div>
 
-          {/* ===== PASSWORD ===== */}
-          <div className="mb-3 position-relative">
-            <label className="form-label">Mật khẩu</label>
+          {/* PASSWORD */}
+          <div className="mb-3 text-start">
+            <label className="form-label fw-semibold">Mật khẩu</label>
             <div className="input-group">
               <input
                 type={showPassword ? "text" : "password"}
-                className="form-control"
+                className="form-control rounded-start-pill px-3"
+                placeholder="Nhập mật khẩu..."
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
               <span
-                className="input-group-text"
+                className="input-group-text rounded-end-pill bg-white"
                 role="button"
                 onClick={() => setShowPassword(!showPassword)}
               >
@@ -88,19 +91,18 @@ function LoginPage({ onLogin }) {
             </div>
           </div>
 
-          {/* ===== LOGIN BUTTON ===== */}
-          <button type="submit" className="btn btn-primary w-100">
+          <button type="submit" className="btn btn-primary w-100 rounded-pill py-2 mt-2 shadow-sm">
             Đăng nhập
           </button>
         </form>
 
-        {/* ===== REGISTER LINK ===== */}
+        {/* REGISTER LINK */}
         {roleParam === "user" && (
           <div className="text-center mt-3">
             <small>
               Chưa có tài khoản?{" "}
               <span
-                className="text-primary text-decoration-underline"
+                className="text-primary text-decoration-underline fw-semibold"
                 role="button"
                 onClick={() => navigate("/register")}
               >
@@ -110,7 +112,7 @@ function LoginPage({ onLogin }) {
           </div>
         )}
 
-        {/* ===== BACK BUTTON ===== */}
+        {/* BACK BUTTON */}
         <div className="text-center mt-4">
           <button
             className="btn btn-link text-secondary text-decoration-none"

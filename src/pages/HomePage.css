@@ -1,0 +1,68 @@
+/* Nền gradient xanh trắng */
+.homepage {
+  background: linear-gradient(180deg, #e6f3ff 0%, #ffffff 100%);
+  min-height: calc(100vh - 120px); /* trừ Header + Footer */
+  color: #212529;
+}
+
+/* Tiêu đề */
+.brand {
+  color: #007bff;
+  background: linear-gradient(90deg, #007bff, #33b5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hình minh họa */
+.homepage-img {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.homepage-img:hover {
+  transform: scale(1.08);
+}
+
+/* Nút chính */
+.homepage-btn {
+  background: linear-gradient(135deg, #007bff, #33b5ff);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.homepage-btn:hover {
+  background: linear-gradient(135deg, #006ae6, #29a3ff);
+  transform: scale(1.05);
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeInUp 0.8s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .homepage {
+    padding: 3rem 1rem;
+  }
+
+  .homepage-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .homepage-img {
+    width: 100px;
+  }
+}

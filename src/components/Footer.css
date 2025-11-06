@@ -1,0 +1,41 @@
+/* Footer với gradient xanh trắng hiện đại */
+.footer-gradient {
+  background: linear-gradient(135deg, #007bff, #4db8ff);
+  color: white;
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.footer-gradient:hover {
+  background: linear-gradient(135deg, #0069d9, #33adff);
+}
+
+/* Text */
+.footer-gradient p {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.footer-gradient span {
+  color: #fff;
+}
+
+/* Icon liên kết */
+.social-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  color: #e3f2fd;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-gradient {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+  }
+}
