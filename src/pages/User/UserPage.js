@@ -85,6 +85,24 @@ function UserPage({ user, onLogout }) {
               </p>
             </div>
           </div>
+          {/* CARD 4 - Flashcard ôn tập */}
+          <div className="col-10 col-sm-6 col-md-4">
+            <div
+              className="feature-card shadow-sm p-3 border-0"
+              onClick={() => navigate("/flashcards")}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3813/3813681.png"
+                alt="Flashcards"
+                width="80"
+                className="mx-auto mb-2"
+              />
+              <h5 className="fw-bold text-primary">Flashcard ôn tập</h5>
+              <p className="text-muted small">
+                🧠 Hệ thống flashcard giúp bạn ôn tập hiệu quả.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

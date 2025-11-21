@@ -14,6 +14,7 @@ import UserHistoryPage from "./pages/User/UserHistoryPage";
 import ExamReviewPage from "./pages/User/ExamReviewPage";
 import PracticeExamPage from "./pages/User/PracticeExamPage";
 import './style.css';
+import FlashCardPage from "./pages/User/FlashCardPage";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -103,7 +104,10 @@ function AppRoutes({ user, setUser }) {
   element={<ExamReviewPage user={user} onLogout={handleLogout} />}
 />
 <Route path="/practice" element={<PracticeExamPage user={user} onLogout={handleLogout} />} />
-
+<Route
+  path="/flashcards"
+  element={<FlashCardPage user={user} onLogout={handleLogout} />}
+/>
 
     </Routes>
   );
